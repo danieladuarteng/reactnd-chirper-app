@@ -20,9 +20,10 @@ class Dashboard extends Component {
 
 function mapStateToProps({ tweets }) {
     return {
-        tweetIds: Object.keys(tweets)
-            .sort((a, b) => tweets[b].timestamp = tweets[a].timestamp)
+      tweetIds: Object.keys(tweets).sort(
+        (a, b) => tweets[b].timestamp - tweets[a].timestamp,
+      ),
     }
-}
+  }
 
 export default connect(mapStateToProps)(Dashboard)
