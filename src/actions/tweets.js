@@ -23,7 +23,7 @@ export function handleAddTweet(text, replyingTo) {
             author: authedUser,
             replyingTo
         })
-            .then((twet) => dispatch(addTweet(tweet)))
+            .then((tweet) => dispatch(addTweet(tweet)))
             .then(() => dispatch(hideLoading()))
     }
 }
