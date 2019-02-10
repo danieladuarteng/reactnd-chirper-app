@@ -26,11 +26,12 @@ class NewTweet extends Component {
             text: ''
         }))
     }
+    
     render() {
         const { text } = this.state
 
         {/* TODO: Redirect to / if submitted */}
-        
+
         const tweetLeft = 250 - text.length
 
         return (
